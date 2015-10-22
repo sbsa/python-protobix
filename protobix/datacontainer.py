@@ -16,10 +16,11 @@ class DataContainer(SenderProtocol):
                        debug     = False,
                        dryrun    = False):
 
-        self._debug    = debug
-        self._dryrun   = dryrun
-        self._zbx_host = zbx_host
-        self._zbx_port = zbx_port
+        self._debug     = debug
+        self._dryrun    = dryrun
+        self._zbx_host  = zbx_host
+        self._zbx_port  = zbx_port
+        self._data_type = data_type
 
     @property
     def data_type(self):
